@@ -1,3 +1,7 @@
+from from_scratch_oop import Employee
+
+'''
+
 class Employee:
 
     # Class variables
@@ -30,6 +34,8 @@ class Employee:
     def calctax(self):
         self.tax = 0.1 * float(self.salary.split()[0])
 
+
+'''
 #---------------------------------------------------------------
 
 # CORE DEVELOPER -> Inheritance

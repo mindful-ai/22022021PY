@@ -36,47 +36,48 @@ class Employee:
 
 # USER/APP DEVELOPER
 
+if __name__ == "__main__":
+    
+    # Infrastructure for three emploees are created
 
-# Infrastructure for three emploees are created
+    e1 = Employee('Anil', ' Oracle', "1000000 INR")
+    e2 = Employee('Sunil', ' Oracle', "1000000 INR")
+    e3 = Employee('Raj', ' Oracle', "1000000 INR")
 
-e1 = Employee('Anil', ' Oracle', "1000000 INR")
-e2 = Employee('Sunil', ' Oracle', "1000000 INR")
-e3 = Employee('Raj', ' Oracle', "1000000 INR")
+    # Now we can work with the infrastructure
 
-# Now we can work with the infrastructure
-
-emplist = [e1, e2, e3]
-for obj in emplist:
-    obj.printinfo()
-
-
-
-
-print('Calculating taxes\n')
-
-for obj in emplist:
-    obj.calctax()
-
-for obj in emplist:
-    obj.printinfo()
-
-
-# Give a hike of 15%
-print('Calculating Hikes\n')
-
-for obj in emplist:
-    currsal = obj.getsalary()
-    newsal = str(int(currsal.split()[0]) + 0.15 * int(currsal.split()[0])) + ' INR'
-    obj.setsalary(newsal)
-
-for obj in emplist:
-    obj.printinfo()   
+    emplist = [e1, e2, e3]
+    for obj in emplist:
+        obj.printinfo()
 
 
 
-print('Employee Count: ', e1.empCount)
 
-e4 = Employee('Rajesh', ' Oracle', "1000000 INR")
+    print('Calculating taxes\n')
 
-print('Employee Count: ', e3.empCount)
+    for obj in emplist:
+        obj.calctax()
+
+    for obj in emplist:
+        obj.printinfo()
+
+
+    # Give a hike of 15%
+    print('Calculating Hikes\n')
+
+    for obj in emplist:
+        currsal = obj.getsalary()
+        newsal = str(int(currsal.split()[0]) + 0.15 * int(currsal.split()[0])) + ' INR'
+        obj.setsalary(newsal)
+
+    for obj in emplist:
+        obj.printinfo()   
+
+
+
+    print('Employee Count: ', e1.empCount)
+
+    e4 = Employee('Rajesh', ' Oracle', "1000000 INR")
+
+    print('Employee Count: ', e3.empCount)
 
